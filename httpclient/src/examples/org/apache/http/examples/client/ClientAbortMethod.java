@@ -47,8 +47,7 @@ public class ClientAbortMethod {
             try {
                 System.out.println("----------------------------------------");
                 System.out.println(response.getStatusLine());
-                // Do not feel like reading the response body
-                // Call abort on the request object
+                // Do not feel like reading the response body Call abort on the request object
                 httpget.abort();
             } finally {
                 response.close();
